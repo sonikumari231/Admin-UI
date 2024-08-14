@@ -1,0 +1,125 @@
+
+/* General Styles */
+.app {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-box::placeholder {
+  color: #aaa; /* Light color for placeholder text */
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: white; /* Set header background to white */
+  color: #333; /* Optional: Set header text color */
+}
+
+tr.selected {
+  background-color: #f0f0f0;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Actions Buttons */
+.edit {
+  color: black;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.delete {
+  color: red;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.save, .cancel {
+  margin: 5px;
+}
+
+/* Bottom Controls */
+.bottom-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Delete Selected Button */
+.delete-selected {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centering pagination controls horizontally */
+  gap: 10px; /* Space between pagination elements */
+  margin-top: 20px; /* Margin at the top to keep space from the content above */
+}
+
+.page-number,
+.pagination-arrow {
+  border: 2px solid skyblue;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: skyblue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.page-number.active,
+.pagination-arrow.active {
+  background-color: white;
+  color: skyblue;
+}
+
+.pagination-arrow:disabled {
+  color: #ccc;
+  background-color: #f0f0f0;
+}
